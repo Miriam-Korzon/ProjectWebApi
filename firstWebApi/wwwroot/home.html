@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="./Scripts/home.js"></script>
+    <link href="./Style/home.css" rel="stylesheet"/>
+</head>
+<body onload="loadPage()">
+    <div id="login">
+        <img id="logo" src="./Images/logo.png" />
+        <h1 id="wellcom"></h1>
+        <br />
+        <button onclick="showUpdate()">עדכון פרטים</button>
+        <button onclick="window.location.href = './Products.html'">לקניה אונליין</button>
+        <div id="register" style="visibility:hidden">
+            <label for="userName">שם משתמש</label><br />
+            <input id="userName" />
+            <br />
+            <label for="pass">סיסמה</label><br />
+            <input type="password" id="pass" onblur="checkPassword()" />
+            <br />
+            <label for="name">שם פרטי</label><br />
+            <input id="name" />
+            <br />
+            <label for="lastName">שם משפחה</label><br />
+            <input id="lastName" />
+            <br />
+            <button onclick="update()">עדכון</button>
+        </div>
+    </div>
+</body>
+</html>
